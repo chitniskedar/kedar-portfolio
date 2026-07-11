@@ -1,0 +1,115 @@
+/* Custom Bezier Curves for Premium Motion feel */
+:root {
+  --ease-premium-in-out: cubic-bezier(0.16, 1, 0.3, 1); /* Custom ultra-smooth ease-out */
+  --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);   /* Organic spring feel */
+}
+
+/* Base Transition Utilities */
+.transition-premium {
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-timing-function: var(--ease-premium-in-out);
+}
+
+.transition-elastic {
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: var(--ease-elastic);
+}
+
+/* Micro-interaction: Elegant Animated Underline */
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.3s var(--ease-premium-in-out);
+}
+
+.animated-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Reveal-on-scroll styles for non-JS fallbacks */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.8s var(--ease-premium-in-out), transform 0.8s var(--ease-premium-in-out);
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Premium Image Zoom Effect */
+.image-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-zoom-target {
+  transition: transform 0.8s var(--ease-premium-in-out);
+}
+
+.image-zoom-container:hover .image-zoom-target {
+  transform: scale(1.04);
+}
+
+/* Ambient Subtle Pulse */
+@keyframes ambient-pulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+}
+
+.animate-ambient-pulse {
+  animation: ambient-pulse 10s ease-in-out infinite;
+}
+
+/* Subtle Skeleton Loader Shimmer */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-mask::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.02) 20%,
+    rgba(255, 255, 255, 0.06) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2.5s infinite;
+  content: '';
+}

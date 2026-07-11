@@ -1,0 +1,93 @@
+@theme {
+  /* Typography Configuration */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Editorial Obsidian Palette */
+  --color-bg-base: #0a0a0a;
+  --color-bg-surface: #171717;
+  --color-bg-surface-hover: #262626;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-border-subtle-hover: rgba(255, 255, 255, 0.2);
+
+  /* Text Hierarchy */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-text-tertiary: #71717a;
+
+  /* Accent Config (Silver-Zinc Metallic Accent with custom warmth) */
+  --color-accent-primary: #ffffff;
+  --color-accent-secondary: #a1a1aa;
+  --color-accent-orange: #ff8c21;
+  --color-accent-glow: rgba(255, 255, 255, 0.02);
+
+  /* Precise Border Radii Scale */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Custom Elevation & Shadows */
+  --shadow-premium-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-premium-md: 0 4px 12px rgba(0, 0, 0, 0.6), 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-premium-lg: 0 12px 24px rgba(0, 0, 0, 0.8), 0 0 1px rgba(255, 255, 255, 0.12);
+  --shadow-glow: 0 0 40px rgba(255, 255, 255, 0.03);
+  --shadow-orange-glow: 0 0 12px rgba(255, 140, 33, 0.15);
+}
+
+:root {
+  --color-bg-base: #f5f3ef;
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-hover: #f1ece4;
+  --color-border-subtle: rgba(17, 17, 17, 0.1);
+  --color-border-subtle-hover: rgba(17, 17, 17, 0.18);
+  --color-text-primary: #121212;
+  --color-text-secondary: #4b4b55;
+  --color-text-tertiary: #73737f;
+  --color-accent-primary: #121212;
+  --color-accent-secondary: #5f5f68;
+  --color-accent-glow: rgba(17, 17, 17, 0.03);
+  --shadow-premium-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-premium-md: 0 10px 24px rgba(17, 17, 17, 0.08), 0 0 1px rgba(17, 17, 17, 0.08);
+  --shadow-premium-lg: 0 20px 50px rgba(17, 17, 17, 0.12), 0 0 1px rgba(17, 17, 17, 0.1);
+  --shadow-glow: 0 0 40px rgba(17, 17, 17, 0.04);
+}
+
+html.dark {
+  --color-bg-base: #0a0a0a;
+  --color-bg-surface: #171717;
+  --color-bg-surface-hover: #262626;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-border-subtle-hover: rgba(255, 255, 255, 0.2);
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-text-tertiary: #71717a;
+  --color-accent-primary: #ffffff;
+  --color-accent-secondary: #a1a1aa;
+  --color-accent-glow: rgba(255, 255, 255, 0.02);
+  --shadow-premium-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-premium-md: 0 4px 12px rgba(0, 0, 0, 0.6), 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-premium-lg: 0 12px 24px rgba(0, 0, 0, 0.8), 0 0 1px rgba(255, 255, 255, 0.12);
+  --shadow-glow: 0 0 40px rgba(255, 255, 255, 0.03);
+}
+
+/* Custom global overrides for smooth experience */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom focus ring defaults for Accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-accent-secondary);
+  outline-offset: 4px;
+}
