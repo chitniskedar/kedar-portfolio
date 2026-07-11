@@ -73,6 +73,15 @@ const techStack: LogoTile[] = [
     name: "TypeScript",
     iconUrl: "https://skillicons.dev/icons?i=ts",
   },
+  {
+    name: "Kotlin",
+    iconUrl: "https://skillicons.dev/icons?i=kotlin",
+  },
+  {
+    name: "Firebase",
+    iconUrl: "https://skillicons.dev/icons?i=firebase",
+  },
+
 ];
 
 const tools: LogoTile[] = [
@@ -89,13 +98,14 @@ const tools: LogoTile[] = [
     iconUrl: "https://skillicons.dev/icons?i=vercel",
   },
   {
-    name: "Windows",
-    iconUrl: "https://skillicons.dev/icons?i=windows",
-  },
-  {
     name: "Git",
     iconUrl: "https://skillicons.dev/icons?i=git",
   },
+  {
+    name: "Matlab",
+    iconUrl: "https://skillicons.dev/icons?i=matlab",
+  },
+  
 ];
 
 function LogoBlock({
