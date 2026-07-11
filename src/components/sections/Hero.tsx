@@ -93,22 +93,27 @@ export default function Hero() {
             className="mt-12 flex flex-wrap gap-4"
           >
             <Button
-              variant="primary"
-              size="lg"
-            >
-              View Projects
-
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-
+  variant="primary"
+  size="lg"
+  onClick={() =>
+    document.getElementById("projects")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+>
+  View Projects
+  <ArrowRight className="ml-2 h-4 w-4" />
+</Button>
             <Button
-              variant="outline"
-              size="lg"
-            >
-              <Github className="mr-2 h-4 w-4" />
-
-              GitHub
-            </Button>
+  variant="outline"
+  size="lg"
+  onClick={() =>
+    window.open("https://github.com/chitniskedar", "_blank")
+  }
+    >
+       <Github className="mr-2 h-4 w-4" />
+     GitHub
+      </Button>
           </motion.div>
 
           
