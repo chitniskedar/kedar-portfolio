@@ -18,7 +18,7 @@ export const contactAssets = {
   discordPfp: new URL("./contact/discord-pfp.png", import.meta.url).href,
   githubPfp: new URL("./contact/github-pfp.png", import.meta.url).href,
   instagramPfp: new URL("./contact/instagram-pfp.png", import.meta.url).href,
-  linkedinPfp: new URL("./contact/linkedin-pfp.png", import.meta.url).href,
+  linkedinPfp: new URL("./contact/linkedin-pfp.jpeg", import.meta.url).href,
 };
 
 export const projectAssets = {
