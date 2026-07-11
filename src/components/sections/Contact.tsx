@@ -50,6 +50,7 @@ const links: ContactLink[] = [
     subtitle: "Let's connect",
     href: "https://linkedin.com/in/kedarchitnis",
     icon: Linkedin,
+    avatarSrc: contactAssets.linkedinPfp,
   },
   {
     title: "Email",
