@@ -81,6 +81,10 @@ const techStack: LogoTile[] = [
     name: "Firebase",
     iconUrl: "https://skillicons.dev/icons?i=firebase",
   },
+  {
+    name: "Verilog",
+    iconUrl: "https://skillicons.dev/icons?i=verilog",
+  },
 
 ];
 
