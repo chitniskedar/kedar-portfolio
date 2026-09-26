@@ -10,6 +10,7 @@ import ProjectDetail from "./components/sections/ProjectDetail";
 import ExperienceStack from "./components/sections/ExperienceStack";
 import Photography from "./components/sections/Photography";
 import Contact from "./components/sections/Contact";
+import StructuredData from "./components/StructuredData";
 import { projects } from "./content/projects";
 
 function getProjectIdFromLocation() {
@@ -51,6 +52,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <div className="relative min-h-screen overflow-x-hidden bg-bg-base text-text-primary selection:bg-[#ff8c21] selection:text-white">
+        <StructuredData project={activeProject} />
         {/* Ambient Background */}
         <div
           aria-hidden="true"

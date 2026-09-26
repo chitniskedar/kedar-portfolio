@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kedarchitnis.vercel.app/sitemap.xml

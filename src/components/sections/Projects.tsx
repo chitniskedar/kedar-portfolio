@@ -44,7 +44,7 @@ export default function Projects() {
           className="max-w-3xl"
         >
 
-          <Heading level={1}>
+          <Heading level={2} className="text-4xl sm:text-5xl md:text-6xl font-bold">
             Projects
           </Heading>
 

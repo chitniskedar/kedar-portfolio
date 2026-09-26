@@ -81,7 +81,7 @@ export default function Photography() {
           className="max-w-3x1"
         >
 
-          <Heading level={1}>Photography</Heading>
+          <Heading level={2} className="text-4xl sm:text-5xl md:text-6xl font-bold">Photography</Heading>
 
           <Text
             size="lg"
@@ -116,7 +116,7 @@ export default function Photography() {
 
                   <img
                     src={photo.src}
-                    alt={photo.id}
+                    alt="Photography by Kedar Chitnis"
                     loading="lazy"
                     className="h-auto w-full bg-bg-base object-contain"
                   />

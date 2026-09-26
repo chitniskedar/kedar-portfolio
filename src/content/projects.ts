@@ -59,8 +59,8 @@ export const projects: Project[] = [
         body: "The app parses incoming notification data, applies filtering rules, and lets users organize updates through categories that match their own priorities rather than the platform's default feed.",
       },
       {
-        title: "Current Direction",
-        body: "The project is still in progress, with the current focus on improving rule customization, polishing the Android experience, and making the filtering system feel effortless in daily use.",
+        title: "Current Status",
+        body: "PESUflow is in progress. Current work focuses on improving rule customization, polishing the Android experience, and making the filtering system feel effortless in daily use.",
       },
     ],
 
@@ -113,8 +113,8 @@ export const projects: Project[] = [
         body: "Examino parses documents, extracts useful learning structure, and uses LLM-assisted question generation to build MCQ banks that can respond to the learner's level over time.",
       },
       {
-        title: "Why It Matters",
-        body: "The project brings together AI tooling and classic study workflows, aiming for a system that feels practical and focused rather than flashy.",
+        title: "Current Status",
+        body: "Examino is completed. It brings together local-first AI tooling and familiar study workflows in a system intended to stay practical and focused.",
       },
     ],
 
@@ -165,8 +165,8 @@ export const projects: Project[] = [
         body: "Using Firebase Authentication and Firestore, NetPay keeps accounts secure while syncing shared expenses in real time so every group member sees an up-to-date state.",
       },
       {
-        title: "Outcome",
-        body: "The result is a cleaner mobile workflow for tracking, splitting, and reviewing expenses without the overhead of spreadsheets or delayed updates.",
+        title: "Current Status",
+        body: "NetPay is completed. It provides a cleaner mobile workflow for tracking, splitting, and reviewing expenses without the overhead of spreadsheets or delayed updates.",
       },
     ],
 
@@ -215,8 +215,8 @@ export const projects: Project[] = [
         body: "The site uses React, TypeScript, Tailwind CSS, and motion-driven interactions, with reusable UI primitives that keep the visual system consistent as sections evolve.",
       },
       {
-        title: "Evolution",
-        body: "Because the portfolio is an active project, it doubles as a living space for experimenting with themes, layouts, galleries, and richer project presentation patterns.",
+        title: "Current Status",
+        body: "The portfolio is completed and remains a living space for experimenting with themes, layouts, galleries, and richer project presentation patterns.",
       },
     ],
 
