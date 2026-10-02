@@ -41,18 +41,21 @@ export const projects: Project[] = [
 
     longDescription:
       "PESUflow parses university notification data and applies customizable filtering, categorization, and organization rules to deliver a cleaner and more relevant notification experience.",
+
     detailIntro:
       "PESUflow is an Android utility built to cut through notification overload for students by reshaping raw university updates into something far more readable and personal.",
+
     detailGallery: [
       {
         src: projectAssets.pesuflowOverview,
         alt: "PESUflow mobile screens overview",
       },
     ],
+
     detailSections: [
       {
         title: "Problem",
-        body: "University notifications often arrive in a noise un-sorted stream, mixing important academic updates with irrelavant messages. The goal was to help students quickly focus on what actually matters to them.",
+        body: "University notifications often arrive in a noisy, unsorted stream, mixing important academic updates with irrelevant messages. The goal was to help students quickly focus on what actually matters to them.",
       },
       {
         title: "Approach",
@@ -68,7 +71,7 @@ export const projects: Project[] = [
       "Kotlin",
       "Android",
       "Material Design",
-      "Notifications"
+      "Notifications",
     ],
 
     github: "https://github.com/chitniskedar/PESUflow",
@@ -91,8 +94,10 @@ export const projects: Project[] = [
 
     longDescription:
       "Examino combines PDF parsing, LLM-assisted question generation, and structured datasets to create a personalized learning experience with adaptive difficulty.",
+
     detailIntro:
       "Examino explores how local-first study tools can become more adaptive by turning static study material into dynamic MCQ practice sessions.",
+
     detailGallery: [
       {
         src: projectAssets.examinoUpload,
@@ -103,6 +108,7 @@ export const projects: Project[] = [
         alt: "Examino home dashboard",
       },
     ],
+
     detailSections: [
       {
         title: "Problem",
@@ -122,7 +128,7 @@ export const projects: Project[] = [
       "Python",
       "LLMs",
       "PDF Parsing",
-      "HTML"
+      "HTML",
     ],
 
     github: "https://github.com/chitniskedar/examino",
@@ -147,14 +153,17 @@ export const projects: Project[] = [
 
     longDescription:
       "NetPay leverages Firebase Authentication and Firestore to securely manage shared expenses with real-time synchronization and intuitive group management.",
+
     detailIntro:
       "NetPay is a shared-expense app focused on making day-to-day group tracking feel lightweight, fast, and dependable.",
+
     detailGallery: [
       {
         src: projectAssets.netpayOverview,
         alt: "NetPay mobile screens overview",
       },
     ],
+
     detailSections: [
       {
         title: "Problem",
@@ -173,13 +182,71 @@ export const projects: Project[] = [
     tech: [
       "Kotlin",
       "Firebase",
-      "Firestore", 
-      "Android"
+      "Firestore",
+      "Android",
     ],
 
     github: "https://github.com/chitniskedar/NetPay",
 
     image: "/projects/netpay.png",
+
+    featured: false,
+
+    status: "Completed",
+
+    year: "2026",
+  },
+
+  {
+    id: "svd-image-compression",
+    title: "SVD Image Compression",
+
+    description:
+      "A mathematical image compression system that uses Singular Value Decomposition and low-rank approximation to reduce image representation size.",
+
+    longDescription:
+      "A Python-based image compression pipeline that decomposes grayscale images using SVD, reconstructs them at different rank values, and evaluates the trade-off between compression and image quality.",
+
+    detailIntro:
+      "SVD Image Compression explores how linear algebra can be applied to a practical image-processing problem by representing images using a smaller number of dominant singular components.",
+
+    detailGallery: [
+      {
+        src: projectAssets.svdOverview,
+        alt: "SVD image compression visual comparison",
+      },
+    ],
+
+    detailSections: [
+      {
+        title: "Problem",
+        body: "Images contain large amounts of pixel data, much of which can be represented using fewer underlying components. The project explores how low-rank matrix approximation can reduce this representation while preserving important visual information.",
+      },
+      {
+        title: "Approach",
+        body: "A grayscale image is represented as a matrix and decomposed using Singular Value Decomposition. The system keeps the first k singular values and corresponding vectors, then reconstructs a rank-k approximation of the original image.",
+      },
+      {
+        title: "Evaluation",
+        body: "Different rank values are evaluated using compression ratio, storage reduction, mean squared error, and peak signal-to-noise ratio. Visual comparisons and graphs show how increasing rank improves reconstruction quality while reducing the theoretical compression benefit.",
+      },
+      {
+        title: "Current Status",
+        body: "The project is completed as a course project demonstrating SVD, low-rank approximation, image reconstruction, and quantitative evaluation using Python and NumPy.",
+      },
+    ],
+
+    tech: [
+      "Python",
+      "NumPy",
+      "Pillow",
+      "Matplotlib",
+      "SVD",
+    ],
+
+    github: "https://github.com/chitniskedar/SVD-Image-Compression",
+
+    image: "/projects/svd-overview.png",
 
     featured: false,
 
@@ -197,14 +264,17 @@ export const projects: Project[] = [
 
     longDescription:
       "Designed from scratch using React, Tailwind CSS, and Framer Motion to create a fast, accessible, and premium browsing experience.",
+
     detailIntro:
       "This portfolio was both a personal site and a design-and-engineering sandbox where layout, motion, and component systems come together.",
+
     detailGallery: [
       {
         src: projectAssets.portfolioRoom,
         alt: "Interactive portfolio hero artwork",
       },
     ],
+
     detailSections: [
       {
         title: "Intent",
@@ -224,7 +294,7 @@ export const projects: Project[] = [
       "React",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion"
+      "Framer Motion",
     ],
 
     github: "https://github.com/chitniskedar/interactive-portfolio",
@@ -238,7 +308,5 @@ export const projects: Project[] = [
     status: "Completed",
 
     year: "2026",
-
-    
   },
 ];

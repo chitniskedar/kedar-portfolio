@@ -27,4 +27,5 @@ export const projectAssets = {
   netpayOverview: new URL("./projects/netpay-overview.png", import.meta.url).href,
   pesuflowOverview: new URL("./projects/pesuflow-overview.png", import.meta.url).href,
   portfolioRoom: new URL("./projects/portfolio-room.png", import.meta.url).href,
+  svdOverview: new URL("./projects/svd-overview.png", import.meta.url).href,
 };
