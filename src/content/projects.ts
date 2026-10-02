@@ -188,6 +188,8 @@ export const projects: Project[] = [
 
     github: "https://github.com/chitniskedar/NetPay",
 
+    live: "https://svd-image-compression.vercel.app/",
+
     image: "/projects/netpay.png",
 
     featured: false,
