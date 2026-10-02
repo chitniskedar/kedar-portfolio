@@ -230,10 +230,6 @@ export const projects: Project[] = [
         title: "Evaluation",
         body: "Different rank values are evaluated using compression ratio, storage reduction, mean squared error, and peak signal-to-noise ratio. Visual comparisons and graphs show how increasing rank improves reconstruction quality while reducing the theoretical compression benefit.",
       },
-      {
-        title: "Current Status",
-        body: "The project is completed as a course project demonstrating SVD, low-rank approximation, image reconstruction, and quantitative evaluation using Python and NumPy.",
-      },
     ],
 
     tech: [
